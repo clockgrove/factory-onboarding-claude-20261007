@@ -1,0 +1,6 @@
+{
+  "name": "factory-onboarding-task-summary",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" }
+}
