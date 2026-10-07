@@ -31,7 +31,7 @@ function check(input, args, output, status = 0, stderr = "") {
     input, encoding: "utf8", timeout: 5000,
   });
   assert.ifError(result.error);
-  assert.equal(result.status, status);
+  assert.equal(result.status, status, result.stderr);
   assert.equal(result.stdout, output);
   assert.equal(result.stderr, stderr);
 }
